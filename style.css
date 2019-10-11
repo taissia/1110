@@ -8,31 +8,36 @@ body{
     font-family: sans-serif;
     height: 100%;
     margin-bottom: -100px;
+    display: flex;
+    flex-direction: column;
 }
 header{
     background:white;
     color: black;
     border-bottom-left-radius: 35px;
+    z-index: 1;
     
 }
 main{
 
     color:white;
-    
 }
 .info{
     background: blue;
     border-bottom-left-radius: 35px;
-    
+    flex-grow: 1;
+    z-index: 2;
 }
 .amount{
     background: black;
     border-bottom-left-radius: 35px;
+    flex-grow: 1;
+    z-index: 3;
     
 }
 footer{
     background:violet;
     flex-grow: inherit;
-    
-    
+    justify-content: center;
+    z-index: 4;
 }
